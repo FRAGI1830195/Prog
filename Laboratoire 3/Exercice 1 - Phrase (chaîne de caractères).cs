@@ -10,7 +10,7 @@ namespace Lab3_Exo1
     {   static string message = "manger est mieux que de faire la cuisine";
         static string[] tabMessage = message.Split(' ');
         static int[] tabAlphabet = new int[26];
-        static int plusGrand = 0, ind = 0;
+        static int plusGrand = 0;
         
         static void AfficherMenu()
         {
@@ -53,7 +53,6 @@ namespace Lab3_Exo1
             {
                 if (tabAlphabet[i] > plusGrand)
                     plusGrand = tabAlphabet[i];
-                ind = i;
             }
             Console.WriteLine("La lettre apparaissant le plus souvent est la lettre '" + (char)(101) + "' car elle apparaît " + plusGrand + " fois");
         }
