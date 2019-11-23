@@ -21,8 +21,7 @@ namespace Lab3_Exo1
         }
 
         static void AfficherNombreMots(string[] tabMessage)
-        {
-            
+        {            
             Console.WriteLine("Il y a " + tabMessage.Length + " mots dans la phrase");
         }
 
@@ -71,7 +70,6 @@ namespace Lab3_Exo1
         {
             AfficherMenu();
             int choix = Convert.ToInt32(Console.ReadLine());
-
             switch (choix)
             {
                 case 1: AfficherNombreMots(tabMessage);break;
